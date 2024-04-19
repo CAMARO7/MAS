@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Inline CSS -->
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        nav .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin: 0 10px;
+        }
+
+        nav .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* About section styles */
+        #about {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Projects section styles */
+        #projects {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            max-width: 100%;
+        }
+
+        /* Contact section styles */
+        #contact {
+            padding: 40px;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        /* Icon styles */
+        .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>Web Developer | Designer | Freelancer</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>Write about yourself here. Your skills, experience, and what makes you unique.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <!-- Example Project -->
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Describe your project here. What did you do? What was the outcome?</p>
+            </div>
+            <!-- Add more project sections as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p>Connect with me:</p>
+            <p>
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/your-profile" target="_blank" class="icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:your-email@example.com" target="_blank" class="icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
